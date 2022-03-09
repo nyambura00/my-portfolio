@@ -11,6 +11,7 @@ import { lightTheme, darkTheme } from './styles/themes';
 import Header from './components/Header';
 import Projects from './components/Projects';
 import Blogs from './components/Blogs';
+import FooterBanner from './components/FooterBanner';
 
 const App = () => {
   const { theme, themeToggler } = useThemeMode();
@@ -24,6 +25,7 @@ const App = () => {
       <Header />
       <Projects />
       <Blogs />
+      <FooterBanner />
     </ThemeProvider>
   );
 }
