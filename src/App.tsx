@@ -8,6 +8,10 @@ import TogglerButton from './components/TogglerButton';
 import GlobalStyles from './styles/global';
 import { lightTheme, darkTheme } from './styles/themes';
 
+import Header from './components/Header';
+import Projects from './components/Projects';
+import Blogs from './components/Blogs';
+
 const App = () => {
   const { theme, themeToggler } = useThemeMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -17,6 +21,9 @@ const App = () => {
       <TopNav />
       <br />
       <TogglerButton themeToggler={themeToggler} />
+      <Header />
+      <Projects />
+      <Blogs />
     </ThemeProvider>
   );
 }

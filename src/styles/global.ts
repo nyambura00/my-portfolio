@@ -30,8 +30,18 @@ const globalStyle = createGlobalStyle`
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
   }
 
-  h1 {
-    font-size: 3.375rem;
+  h2 {
+    font-size: 2.375rem;
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: ${({ theme }: GlobalThemeProps) => theme.text};
+  }
+
+  p {
+    font-size: 1rem;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
   }
 
