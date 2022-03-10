@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 const TopNav = () => {
     return (
         <TopNavWrapper>
             <TopNavItems>
-                <TopNavItem>See Projects</TopNavItem>
-                <TopNavItem>Reach Out</TopNavItem>
-                <TopNavItem>Share portfolio</TopNavItem>
+                <Link to="/seeprojects">
+                    <TopNavItem>See Projects</TopNavItem>
+                </Link>
+                <Link to="/contact">
+                    <TopNavItem>Reach Out</TopNavItem>
+                </Link>
+                <Link to="/shareportfolio">
+                    <TopNavItem>Share portfolio</TopNavItem>
+                </Link>
             </TopNavItems>
             <TopHrElement />
         </TopNavWrapper>
