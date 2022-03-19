@@ -11,7 +11,6 @@ export default function FooterBanner() {
               <SpeakerphoneIcon className="h-6 w-6 text-white" aria-hidden="true" />
             </span>
             <p className="ml-3 font-medium text-white truncate">
-              <span className="md:hidden">We announced a new product!</span>
               <span className="hidden md:inline">site under agile development everyday</span>
             </p>
           </div>

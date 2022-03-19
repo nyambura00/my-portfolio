@@ -6,7 +6,7 @@ import { lightTheme, darkTheme } from '../../styles/themes';
 const ThemeContext: React.FC = ({ children }) => {
   const { theme } = useThemeMode();
 
-  const themeMode = theme === 'dark' ? darkTheme : lightTheme;
+  const themeMode = theme === 'light' ? lightTheme : darkTheme; //light theme initially dominating
 
   return <ThemeProvider theme={themeMode}>{children}</ThemeProvider>;
 };
